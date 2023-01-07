@@ -1,0 +1,11 @@
+
+
+#imagem{
+    background-color: brown;
+    width: 0px;
+    height: 200px;
+    /*overflow: scroll;*/
+    border-radius: 50%;
+}
+
+ 
