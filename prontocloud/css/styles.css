@@ -1,0 +1,127 @@
+
+    html {
+        font-size:  62.5%;
+    }
+
+    body {
+        background-color: #f5f5f5;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .main-container {
+        display: block;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: block;
+        float: left;
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        background: #ffffff;
+        display: block;
+        float: left;
+        padding: 20px;
+        width: 100%;
+        border-bottom: 1px solid #254159;
+    }
+
+    h1{
+        font-size: 2.4rem;
+        color: #254159;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #254159;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        font-size: 1.8rem;
+        color: #324658;
+        margin-bottom: 10px;
+    }
+
+    h4{
+        font-size: 1.6rem;
+        color: #324658;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        line-height: 1.2;
+        color: #565656;
+    }
+
+    ol {
+        margin-left: 30px;
+    }
+
+    ol li {
+        font-size: 1.4rem;
+        color: #454545;
+    }
+
+    section {
+        background-color: #fff;
+        display: block;
+        float: left;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 20px;
+    }
+
+    section nav {
+        display: block;
+        float: left;   
+        width: 30%;
+    }
+
+    nav li {
+        background-color: #cfcfcf;
+        margin: 1px 20px 1px 0;
+        padding: 10px;
+    }
+
+    nav li:hover {
+        background-color: #9e9e9e;
+    }
+
+    nav a {
+        text-decoration: nome;
+        color: #254174;
+    }
+
+    section article {
+        
+        display: block;
+        float: left;
+        width: 70%;
+    }
+
+    footer {
+        background-color:#324658;
+        display: block;
+        float: left;
+        padding: 20px;
+        width: 100%;
+    }
+
+    footer p {
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    footer small {
+        font-size: 80%;
+        display: block;
+    }
