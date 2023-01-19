@@ -78,6 +78,11 @@
         background-color: #c2cbd3 !important;
     }
 
+    #tenho-interesse form, .cog-cognito .cog-form .cog-1 .is-default .cog-cognito--styled .cog-form--light-background .cog-cognito--protect-css{
+        background-color: #c2cbd3 !important;
+        --form__background-color: #c2cbd3 !important;
+    }
+
     ol {
         margin-left: 30px;
     }
@@ -142,8 +147,19 @@
         display: block;
     }
 
-    .cognit {
+    .cognito {
         height: 350px !important;
         overflow: hidden !important;
     }
 
+    @media (max-width: 425px) {
+        section nav,
+        section article {
+            width: 100%;
+        }
+    }
+
+        .container{
+            padding-left: 1%;
+            padding-right: 1%;
+        }
