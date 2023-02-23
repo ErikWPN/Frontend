@@ -82,3 +82,42 @@
 ### Instalação do Node.JS
 - Para a gente conseguir execultar scripts JS no terminal de comando, precisamosutlizar o Node.js
 - Instalação https://nodejs.org/pt-br/download/package-manager/
+
+
+## Variáveis
+São utilizadas para referenciar espaço na memória
+
+- var
+- const (fica com o valor inutável)
+- let
+- string (Conjunto de caracteres)
+- tipagem: número ou string
+- array: conjunto de valores
+
+## Operadores
+- Soma +
+- Subtração -
+- Multiplicador *
+- Dividir /
+- Módulo (esto de divisão) %
+- mah: random(), round(), sqrt()
+
+* Atribuição
+a = b
+a += b
+a -= b
+a *= b
+a /= b
+a %= b
+Adiciona 1 ++
+subtrai 1 --
+
+* Operadpr de Comparação
+- igual == ou ===
+- Diferente !=
+- Maior que >
+- Maior ou igual >=
+- Menos que <
+- Menos que <=
+
+https://developer.mozilla.org/pt-BR/docs/web/JavaScript/Guide/Expressions_and_operators
