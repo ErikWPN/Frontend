@@ -54,6 +54,7 @@
   var meuCarro = cor == "preto" : "branco";
 
   ## If
+  ```
   if (...) {
 
   }
@@ -73,9 +74,10 @@
   else if (...) {
 
   } 
-
+  ```
   ## Switch
 
+  ```
   switch (cor) {
     case 'branco' :
         meuCarro = 'branco';
@@ -89,8 +91,11 @@
     default :
         console.log('não temos a cor desejada');
   }
+    ```
 
   ## media
+
+  ```
   var nota1 = 10;
   var nota2 = 8;
   var nota3 = 9;
@@ -101,3 +106,93 @@
   } else {
     console.log ("Aluno em recuperação")
   }
+
+```
+## Laços de Repetição
+```
+// fazer a revisão di carro aos 10 km
+var km;
+var revisao = 3;
+for(km = 0; km <= revisao; km++ ){
+    console.log("apenas" + km +"kms então pode rodar");
+}
+
+```
+### Cálcular de média de alunos
+
+```
+var alunos = [
+  [6, 7, 8, 6],
+  [10, 5, 8, 9],
+  [6, 4, 8, 3]
+]
+
+var nota = 0;
+for (var i = 0; i < alunos.length; i++){
+
+    nota = 0
+    aluno = alunos[i]
+    console.log("Aluno: " + aluno);
+    
+    for( c = 0; c < aluno.length; c++ ){
+      nota += aluno[c];
+}
+
+    media = nota / 4;
+
+    if (media >= 7) {
+        resultado = "aprovado";
+    } else {
+      resultado = "reprovado"
+    }
+
+    console.log("Media: " + media + "-" + resultado);
+    }
+    ```
+
+    ## Funções
+
+    - Evitar a repetição de código
+    - Realizar chamadas dinâmicas de agoritmos
+
+    ```
+    function calcularMedia( notas ) {
+
+      let soma = 0;
+      for( c = 0; c < notas.length; c++) {
+        soma += notas[c];
+  
+      }
+  
+      media = soma / notas.length;
+  
+      return media;
+    
+  
+    }
+    
+    let media; // escopo global
+    
+    function aprovacao ( notas ) {
+    
+      let media = calcularMedia( notas ); // escopo global
+      
+      let condicao = media >= 8 ? "aprovado" : "reprovado";
+      
+      return "Media: " + media + ' - Resultado: ' + condicao;
+    
+    }
+    //console.log ("Média: " +calcularMedia([8, 7, 9]))
+    //console.log (aprovacao(calcularMedia([8, 7, 9])))
+    console.log( aprovacao([8, 7, 9]) )
+    
+    //console.log ("Média: " +calcularMedia([10, 7, 6]))
+    //console.log (aprovacao(calcularMedia([10, 7, 6])))
+    console.log( aprovacao([10, 7, 6]) )
+    
+    //console.log ("Média: " +calcularMedia([7, 7, 5]))
+    //console.log (aprovacao(calcularMedia([7, 7, 5])))
+    console.log( aprovacao([7, 7, 5]) )
+  // Let = var | Let forma atual \\
+
+  ```
