@@ -1,0 +1,198 @@
+
+# Operadores
+
+## Aritméticos: retornam o resultado de uma operação
+
++ Somar
+- subtrair
+* multiplxar
+/ dividir
+% resto da divisão
+
+## Comparadores matemáticos: teste lógico, retorno booleano (True 0 false):
+< Menor que
+> Maior que
+<= Menor ou igual
+>= Maior ou igual
+
+## Comparadores Lógicos: teste Lógico, retorno booleano (true / false)
+== igualdade entre sentenças (valor)
+!= diferença entre sentenças (valor)
+=== igualdade entre sentenças (valor e tipo)
+!== diferença entre sentenças (valor e tipo)
+
+  a == b = true
+  a != b = false
+
+* Atribuição
+  a = b
+  a = 4
+
+  ## Operadores de lógica e junção lógica
+  !   Não (NOT)
+  &&  E (AND)
+  ||  OU (OR)
+
+  O sinal de explamação (!) é o operador NOT (não), Utilização para negar a sentação que vem na sequência.
+
+  #### Exemplos:
+
+  a != b    // o valor de a é diferente de b
+  x !== y   // o valor e o tipo de x são diferentes de y
+  !a == b  // valor de a não é igual ao valor b
+
+  #### As condições lógicas são convertidas em números binários:
+  true é equivalente a 1
+  false é equivalente a 0
+
+  #### Operador Lógicas de atribuição
+
+  tem a capacidade de atribuir valor a uma variável a partir de uma cindiçao lógica, economiza IFs
+
+  Exemplo:
+
+  var meuCarro = cor == "preto" : "branco";
+
+  ## If
+  ```
+  if (...) {
+
+  }
+
+  ## Else
+  else {
+
+  }
+
+  if (cor == "preto") {
+    meuCarro = "preto";
+  } else {
+    meuCarro = "cinza";
+  }
+
+  ## Else if
+  else if (...) {
+
+  } 
+  ```
+  ## Switch
+
+  ```
+  switch (cor) {
+    case 'branco' :
+        meuCarro = 'branco';
+        break;
+    case 'vermmelhor :
+        meuCarro = 'vermelho';
+        break;
+    case 'amarelo' :
+        meuCarro = 'amarelo';
+        break;
+    default :
+        console.log('não temos a cor desejada');
+  }
+    ```
+
+  ## media
+
+  ```
+  var nota1 = 10;
+  var nota2 = 8;
+  var nota3 = 9;
+  var nota4 = 7;
+  var media = (nota1 + nota2 + nota3 + nota4) / 4;
+  if ( media > 8) {
+    console.log("Aluno aprovado")
+  } else {
+    console.log ("Aluno em recuperação")
+  }
+
+```
+## Laços de Repetição
+```
+// fazer a revisão di carro aos 10 km
+var km;
+var revisao = 3;
+for(km = 0; km <= revisao; km++ ){
+    console.log("apenas" + km +"kms então pode rodar");
+}
+
+```
+### Cálcular de média de alunos
+
+```
+var alunos = [
+  [6, 7, 8, 6],
+  [10, 5, 8, 9],
+  [6, 4, 8, 3]
+]
+
+var nota = 0;
+for (var i = 0; i < alunos.length; i++){
+
+    nota = 0
+    aluno = alunos[i]
+    console.log("Aluno: " + aluno);
+    
+    for( c = 0; c < aluno.length; c++ ){
+      nota += aluno[c];
+}
+
+    media = nota / 4;
+
+    if (media >= 7) {
+        resultado = "aprovado";
+    } else {
+      resultado = "reprovado"
+    }
+
+    console.log("Media: " + media + "-" + resultado);
+    }
+    ```
+
+    ## Funções
+
+    - Evitar a repetição de código
+    - Realizar chamadas dinâmicas de agoritmos
+
+    ```
+    function calcularMedia( notas ) {
+
+      let soma = 0;
+      for( c = 0; c < notas.length; c++) {
+        soma += notas[c];
+  
+      }
+  
+      media = soma / notas.length;
+  
+      return media;
+    
+  
+    }
+    
+    let media; // escopo global
+    
+    function aprovacao ( notas ) {
+    
+      let media = calcularMedia( notas ); // escopo global
+      
+      let condicao = media >= 8 ? "aprovado" : "reprovado";
+      
+      return "Media: " + media + ' - Resultado: ' + condicao;
+    
+    }
+    //console.log ("Média: " +calcularMedia([8, 7, 9]))
+    //console.log (aprovacao(calcularMedia([8, 7, 9])))
+    console.log( aprovacao([8, 7, 9]) )
+    
+    //console.log ("Média: " +calcularMedia([10, 7, 6]))
+    //console.log (aprovacao(calcularMedia([10, 7, 6])))
+    console.log( aprovacao([10, 7, 6]) )
+    
+    //console.log ("Média: " +calcularMedia([7, 7, 5]))
+    //console.log (aprovacao(calcularMedia([7, 7, 5])))
+    console.log( aprovacao([7, 7, 5]) )
+  // Let = var | Let forma atual \\
+
+  ```

@@ -1,0 +1,129 @@
+# JavaScript
+- Estado do JS (https://2020.stateofjs.com/en-US/technoogies/)
+- Omnipresente na web
+- App híbridos
+- Aplicação de ponta-a-ponta: banco de dados, Back-end / Front-end
+- Interagir com DOM (api-web)
+- Requisições dinâmcas
+- IoT (Internet das Coisas): o JS está presente em tudo
+- ECMAScript
+
+## Fundamentos JS
+- Fundamento do Javascript são essenciais para avançar no desenvolvimento de aplicação moderna, é a base de diversos frameworks
+- Neste curso evoluímos da base para o topo
+- é Melhor que começar na frente e precisar retornar a base
+
+## Metodologia
+- Método progressivo e intefrado
+- Todo arranha céu só é erguido depois de ter uma fundação robusta e segura
+- Neste Curso  apresentamos conceitos de modo podressivo, seguindo uma linha de evolução
+- Começa fácil e vai aumentando a complexidade
+- Além da especialização, aprendemos a integrar com diversas possibilidades
+
+## Lógica da Programação
+| - Computador:
+|   -- Máquinas que extrai dados
+|   -- Processar: realizar operação nos dados de entrega
+| - Dado: é o que pode ser processamento
+|- Processamento de dados: entrega (dados) > Processamento > Saída (informação)
+|
+| E a Lógica?
+| Lógica é aquilo que faz sentido
+|
+| Como escrever um programa?
+| - Aplicar a lógica parra descrever s passos para resolver um problema em ordem de execução
+|
+| A Lógica de programação
+| - è a técnica de sequenciar pensamentos, passos, fluxo de dados para atingir um objetivo: a informação
+| - A sequencia de passos, instruções que o computador deve seguir é cohecida como ALGORITMO
+|
+| Algoritmo
+| - Sequência lógica e finita de intruções que resolvem um problema
+| - Exemplo: receita de bolo, manual de instrução
+| - Nem todo algoritmo é um programa de computador, mas tudo programa de computador é algoritmo
+| - Quem viabiliza o funcionamento dos algoritmos nos computadores: linguagens de programação
+|
+|
+|
+
+
+### Algoritmo para calcular a média de 3 numeros 
+
+1. Inicio;
+2. Receber o primeiro número: entrada 1;
+3. Receber o segundo número: entrada 2;
+4. Receber o terceiro número: entrada 3;
+5. PROCESSAMENTO: Somar os 3 número recebiidos e dividir por três: (entrada 1, entrada 2, entrada 3) / 3;
+6. Exibir o resultado: print, echo, console.log ;
+7. fim;
+
+### Torre de Manoi
+- Mover todos os discos para a direita, com o menos número de movimento possível, sem colocar um disco em cima de um disco menos: https://www.somatematica.com.br/jogos/hanoi/
+- Jogos: https://www.somatematica.com.br/jogos.php
+
+### Funcionalidades gerais
+- Criar algoritmos e programas para executar no navegador: client side
+- Manipular o DOM: elementos, eventos, estilos
+- Mode.js: fremework JS para Back-end / Runtime em JS
+- Mongo.db / GraphQL: banco de dados em JS
+- React / vue.js / angular: framework JS para desenvolvimento mobile
+- React Native: framework JS para desenvolvimento Mobile
+
+- recebe e manipular dados
+- tomar decisões baseados na lógica computacional
+- loop e interações
+- condições de saida
+
+### Executar o JS
+- Console browsers
+- Editores: Sublime, VSC / Visual Studio Code
+- JS Fiddle https://jsfiddle.net/
+
+### Instalação do Node.JS
+- Para a gente conseguir execultar scripts JS no terminal de comando, precisamosutlizar o Node.js
+- Instalação https://nodejs.org/pt-br/download/package-manager/
+
+
+## Variáveis
+São utilizadas para referenciar espaço na memória
+
+- var
+- const (fica com o valor inutável)
+- let
+- string (Conjunto de caracteres)
+- tipagem: número ou string
+- array: conjunto de valores
+
+## Operadores
+- Soma +
+- Subtração -
+- Multiplicador *
+- Dividir /
+- Módulo (esto de divisão) %
+- mah: random(), round(), sqrt()
+
+* Atribuição
+a = b
+a += b
+a -= b
+a *= b
+a /= b
+a %= b
+Adiciona 1 ++
+subtrai 1 --
+
+* Operadpr de Comparação
+- igual == ou ===
+- Diferente !=
+- Maior que >
+- Maior ou igual >=
+- Menos que <
+- Menos que <=
+
+https://developer.mozilla.org/pt-BR/docs/web/JavaScript/Guide/Expressions_and_operators
+
+
+### JsFlidder
+
+- Site para teste e a varições de resultados.
+- https://jsfiddle.net/wpvqy0ta/
