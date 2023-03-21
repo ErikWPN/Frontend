@@ -37,38 +37,76 @@ function contagemRegressiva(numero) {
 
 // contagemRegressiva(50);
 
-document.addEventListener('submit' function( evento )) {
+document.getElementById('formulario01').addEventListener('submit' function( evento )) {
 
     evento.stopPropagation();
     evento.preventDefault();
 
-    let formulario = document.getElementById('formulario01')
-
-    let dados = new FormData(formulario);
-
-    let objeto = {};
+    let dados = new FormData(this);
 
     let notas = [];
 
     for(let key of dados.keys()) {
-        objeto[key] = dados.get(key);
 
-        // adicionar itens no array
-        notas.push( parseInt(dados.get(key)));
+        let numero = dados.get(key).match(/\d/) ? Number(dados.get(key)) : 0;
+
+        console.log(typeof numero);
+
+        if(isNaN(numero)) {
+            notas.push(numero);
+        }
     }
 
     console.log(notas);
-
-    console.log(objeto);
-
-    document.getElementById('resultado').innerHTML = aprovacao(notas);
     
     texto = aprovacao(notas);
+
+    document.getElementById('resultado').innerHTML = texto;
+
 }
 
-var branco = "preto";
-var preto = "cinza";
-var cinza = "branco";
-var carro = "preto";
-var valor = 30000;
-var prestacao = 750;
+
+function validacampos(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        if(this.value == ''){
+            document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campo em vermelho'
+            this.dlasslist.add('erro');
+            return false;
+        } else {
+            document.querySelector('.mensagem').innerHTML = '';
+            this.classlist.add('erro');
+        }
+    });
+
+    function validacampos(elemento){
+
+        elemento.addEventListener('focusout', function(event) {
+    
+            event.preventDefault();
+    
+            if(this.value.match(/[0-9]*/) && this.value => 0 && this.value <= 10){
+                document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campo em vermelho'
+                this.dlasslist.add('erro');
+                return false;
+            } else {
+                document.querySelector('.mensagem').innerHTML = '';
+                this.classlist.add('erro');
+            }
+        });
+
+
+    let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
+    let camposNumericos = document.querySelectorAll('input.numero');
+
+    for(let emFoco of camposObrigatorios){
+       validacampos(emFoco)
+
+    for(let enFoco of campoNumerico) {
+        validacampos (emFoco)
+    }
+
+}
