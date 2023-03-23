@@ -37,11 +37,18 @@ function contagemRegressiva(numero) {
 
 // contagemRegressiva(50);
 
-document.getElementById('formulario01').addEventListener('submit' function( evento )) {
+const formulario01 = document.getElementById('formulario01').
 
-    evento.stopPropagation();
+if(forulario01)
+formulario01.addEventListener('submit', function( evento ) {
+
     evento.preventDefault();
+    evento.stopPropagation();
 
+    if( this.getArrtibute('class').match(/erro/) ) {
+        return false;
+    }
+    
     let dados = new FormData(this);
 
     let notas = [];
@@ -50,9 +57,7 @@ document.getElementById('formulario01').addEventListener('submit' function( even
 
         let numero = dados.get(key).match(/\d/) ? Number(dados.get(key)) : 0;
 
-        console.log(typeof numero);
-
-        if(isNaN(numero)) {
+        if(!isNaN(numero)) {
             notas.push(numero);
         }
     }
@@ -63,11 +68,10 @@ document.getElementById('formulario01').addEventListener('submit' function( even
 
     document.getElementById('resultado').innerHTML = texto;
 
-}
+});
 
 
 function validacampos(elemento){
-
     elemento.addEventListener('focusout', function(event) {
 
         event.preventDefault();
@@ -80,33 +84,61 @@ function validacampos(elemento){
             document.querySelector('.mensagem').innerHTML = '';
             this.classlist.add('erro');
         }
-    });
+});
 
-    function validacampos(elemento){
+function validaCamposNumero(elemento){
 
         elemento.addEventListener('focusout', function(event) {
     
             event.preventDefault();
+
+            let Numero = rhis.value.match(/^[\d]5-[\d]3/) ? this.value.replace(/-/,'') : this.value;
     
-            if(this.value.match(/[0-9]*/) && this.value => 0 && this.value <= 10){
-                document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campo em vermelho'
-                this.dlasslist.add('erro');
-                return false;
-            } else {
+            if(Numero != ""(/[0-9]*/) && Numero >= 0 && Numero <= 10){
                 document.querySelector('.mensagem').innerHTML = '';
+                this.classlist.remove('erro');
+                ehis.parentNode.classlist.remove('erro');
+            } else {
+                document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campo em vermelho';
                 this.classlist.add('erro');
+                this.parentNode.classlist.add('erro');
+                return false;
             }
         });
+    }
 
+    function validaEmail(elemento){
 
+        elemento.addEventListener('focusout', function(event) {
+            event.preventDefault();
+
+            const emailValido = /^[a-z0-9]+@[az0-9]+\.[a-z]+\.[a-z]?$/i
+            if(this.value.match(/@/)) {
+                document.querySelector('.mensagem').innerHTML = '';
+                this.classlist.remove('erro');
+                ehis.parentNode.classlist.remove('erro');
+            } else {
+                document.querySelector('.mensagem').innerHTML = 'verifique o preenchimento dos campo em vermelho';
+                this.classlist.add('erro');
+                this.parentNode.classlist.add('erro');
+                return false;
+            }
+
+    });
+
+}    
     let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
     let camposNumericos = document.querySelectorAll('input.numero');
+    let camposEmail = document.querySelectorAll('input.email');
 
     for(let emFoco of camposObrigatorios){
        validacampos(emFoco)
 
+    }
     for(let enFoco of campoNumerico) {
-        validacampos (emFoco)
+        validaCamposNumero (emFoco)
     }
 
-}
+    for(let enFoco of camposEmail) {
+        validaEmail (emFoco)
+    }
