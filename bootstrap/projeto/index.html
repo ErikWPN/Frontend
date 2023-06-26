@@ -10,25 +10,21 @@
 </head>
 <body>
 
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
 
-                        <h1>Logo</h1>
+                <h1>Logo</h1>
 
-                    </div>
-                        <div class="col">
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+                    <a class="list-group-item" href="#sobre"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Sobre</a>
+                    <a class="list-group-item" href="#Produtos"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Produtos</a>
+                    <a class="list-group-item" href="#Contato"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Contato</a>
+                </div>
+                        
 
-                            <ul class="nav justify-content-end">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#Produtos">Produtos</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#Contato">Contato</a></li>
-
-                            </ul>
-
-                    </div>
                 </div>
             </div>
         </header>
@@ -41,7 +37,7 @@
                         <h2>Sobre nos</h2>
                         <p>Somos um curso mundialmente conhecido onde nosso objetivo e preparar os alunos direito para o mercado de trabalho exterior!</p>
                         <p>Deis de 2004-2023 somos conhecitos por inumeras instituiçoes e temos enormes parcerias! nosso faco e dedicação sera totalmente ao desenvolvimento do aluno, assim como um curso de carreira proporcionado pela empressa Google.</p>
-                        <a class="btn btn-lg btn-success">Botão</a>
+                        <a class="btn btn-lg btn-success" href="cadastro.html">Botão</a>
                     </div>
                     <div class="col-md-5 col-sm-12">
                         <img src="./imagens/imagem 1.jpg" alt="Tecnology" class="img-fluid">
@@ -62,26 +58,30 @@
                             <img class="img" src="./imagens/curso programador.jpg" alt="Produtos" class="img-fluid">
                             
                                 <div class="card-body">
-                                    <h5 class="card-title">lorem</h5>
-                                        <p class="card-text">Curso de Desenvolvimento de Web e App</p>
+                                    <h5 class="card-title">Front-End</h5>
+                                        <p class="card-text">Curso de Desenvolvimento, Desenvolva projetos para multiplas empresas</p>
                                     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Produto</a>
                                 </div>
-
+                        </div>
+                        <div class="card">
                             <img class="img" src="./imagens/curso banco de dados.jpg" alt="Produtos" class="img-fluid">
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Lorem</h5>
-                                        <p class="card-text">Curso para gerenciamento e manuntenção de Web e App</p>
+                                    <h5 class="card-title">Back-End</h5>
+                                        <p class="card-text">Curso para gerenciamento e manuntenção de Web e App, melhore usa experiência em banco de dados e resolva probelmas para multiplas plataformas
+                                        </p>
                                     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Produto</a>
                                 </div>
-
+                        </div>
+                        <div class="card">
                             <img class="img" src="./imagens/curso full stalker.jpg" alt="Produtos" class="img-fluid">
 
                                 <div class="card-body">
-                                    <h5 class="card-title">Lorem</h5>
+                                    <h5 class="card-title">FullStack</h5>
                                         <p class="card-text">Curso de conhecimento geral e analise de sistemas! inclui Pylon e Designer.</p>
                                     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver Produto</a>
                                 </div>
+                            </div>
 
                             </div>
                         </div>
@@ -92,7 +92,7 @@
 
         </section>
 
-        <section id="Contado">
+        <section id="Contato">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -116,7 +116,8 @@
 
                             <div class="input-group">
                                 <label>Qual curso deseja realizar</label>
-                                    <select>
+                                <br>
+                                    <select class="form-control">
                                         <option value="Azul" selected>Dev</option>
                                         <option value="Verde">BD</option>
                                         <option value="Vermelho">FullStack</option>
@@ -125,8 +126,8 @@
     
                                 <div class="input-group">
                                     <label>Nivel</label>
-                                    <select>
-                                        <option value="Azul"  selected>Iniciante</option>
+                                    <select class="form-control">
+                                        <option value="Azul" selected>Iniciante</option>
                                         <option value="Verde">Profissinal</option>
                                         <option value="Vermelho">Carreira</option>
                                     </select>
